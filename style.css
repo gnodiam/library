@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'LibraryFont';
+    src: url(fonts/antique_book-webfont.woff) format('woff'),
+    url(fonts/antique_book-webfont.woff2) format('woff');
+}
+:root{
+    font-family: 'LibraryFont',sans-serif;
+    color: white;
+    font-size: 16px;
+}
+.library {
+    height: 100vh;
+    display: grid;
+    grid-template: 250px auto/ 300px auto;
+    background-image: url(images/wood-background--dark-wooden-background.jpg);
+    background-size: contain;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+/*     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(images/book-g5ef29307a_1920.jpg);
+    background-size:contain;
+ */    grid-column: 1 /span 2;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.heading{
+    font-family: 'LibraryFont',sans-serif;
+    color:white;
+    font-size: 150px;
+    text-align: center;
+
+}
+.logo {
+    width:100px;
+    color: white;
+}
+
+form {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+
+}
+
+.property{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+input {
+    background:none;
+}
+
+.card {
+    border: 1px solid grey;
+}
